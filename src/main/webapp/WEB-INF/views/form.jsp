@@ -16,7 +16,7 @@
 		<input name="submit" type="submit" />
 	</form>
 	
-	<table style="width: 50%; background-color: aliceblue; margin: auto">
+	<table style="width: 50%; background-color: aliceblue; margin: auto; margin-top: 50px">
 		<c:forEach var="pers" items="${personList}">
           <tr style="text-align: center">
             <td>${pers.prenom}</td>
