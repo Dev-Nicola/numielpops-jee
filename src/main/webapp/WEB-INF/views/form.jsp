@@ -23,7 +23,7 @@
             <td>${pers.nom}</td>
             <td>${pers.email}</td>
           </tr>
-          </c:forEach>
+         </c:forEach>
 	</table>
 	
 </body>

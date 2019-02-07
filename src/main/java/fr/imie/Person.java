@@ -3,32 +3,32 @@ package fr.imie;
 
 public class Person {
 
-    private String prenom;
+    private String firstname;
 
-    private String nom;
+    private String lastname;
 
 	private String email;
 
-    public Person(String prenom, String nom, String email) {
-        this.prenom = prenom;
-        this.nom = nom;
+    public Person(String firstname, String lastname, String email) {
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.email = email;
     }
 
     public String getPrenom() {
-        return prenom;
+        return firstname;
     }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public void setPrenom(String firstname) {
+        this.firstname = firstname;
     }
 
     public String getNom() {
-        return nom;
+        return lastname;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNom(String lastname) {
+        this.lastname = lastname;
     }
     
     public String getEmail() {
