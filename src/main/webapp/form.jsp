@@ -6,7 +6,7 @@
 </head>
 <body>
 
-	<h1>Formulaire ${pers.prenom} ${pers.nom}</h1>
+	<h1>Formulaire</h1>
 	
 	<form method="POST" action="person">
 		<label for="firstname">Prénom : <input id="firstname" name="firstname" placeholder="Prénom"/></label>
@@ -14,6 +14,10 @@
 		<label for="email">Email : <input id="email" name="email" placeholder="Email"/></label>
 		<input name="submit" type="submit" />
 	</form>
+	
+	<p>${pers.prenom}</p>
+	<p>${pers.nom}</p>
+	<p>${pers.email}</p>
 	
 </body>
 </html>

@@ -14,13 +14,11 @@ public class PersonServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String prenom = request.getParameter("firstname");
-        String nom = request.getParameter("name");
+        String nom = request.getParameter("lastname");
         String email = request.getParameter("email");
         Person pers = new Person(prenom, nom, email);
         request.setAttribute("pers", pers);
-        request.getRequestDispatcher("/person").forward(request, response);
-        
-        System.out.println(prenom);
+        request.getRequestDispatcher("/form.jsp").forward(request, response);
     }
 
 }
