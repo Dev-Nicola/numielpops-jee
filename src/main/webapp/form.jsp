@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
 <meta charset="utf-8">
@@ -15,9 +16,15 @@
 		<input name="submit" type="submit" />
 	</form>
 	
-	<p>${pers.prenom}</p>
-	<p>${pers.nom}</p>
-	<p>${pers.email}</p>
+	<table style="width: 50%; background-color: aliceblue; margin: auto">
+		<c:forEach var="pers" items="${personList}">
+          <tr style="text-align: center">
+            <td>${pers.prenom}</td>
+            <td>${pers.nom}</td>
+            <td>${pers.email}</td>
+          </tr>
+          </c:forEach>
+	</table>
 	
 </body>
 </html>
