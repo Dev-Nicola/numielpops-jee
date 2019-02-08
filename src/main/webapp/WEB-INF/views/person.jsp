@@ -17,7 +17,7 @@
 	</form>
 	
 	<table style="width: 50%; background-color: aliceblue; margin: auto; margin-top: 50px">
-		<c:forEach var="pers" items="${personList}">
+		<c:forEach var="pers" items="${persons}">
           <tr style="text-align: center">
             <td>${pers.prenom}</td>
             <td>${pers.nom}</td>

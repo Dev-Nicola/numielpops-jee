@@ -10,7 +10,8 @@ dependencies {
     providedCompile 'javax:javaee-api:7.0'
     implementation 'javax.servlet:jstl:1.2'
     implementation 'org.springframework:spring-webmvc:5.1.4.RELEASE'
-    // implementation 'org.eclipse.persistence:eclipselink:2.7.4'
+    implementation 'org.springframework.data:spring-data-jpa:2.1.4.RELEASE'
+    implementation 'org.eclipse.persistence:eclipselink:2.7.4'
 }
 
 apply plugin: 'idea'
