@@ -13,14 +13,18 @@ public class PersonControler {
 
     @Autowired
     private PersonRepository repository;
-
+    
     @RequestMapping("person")
     public String person(Person person, Model m) {
+    	
+    	// repository.save(new Person("p","n","e"));
+    	repository.save(new Person(person.getPrenom(),person.getNom(),person.getEmail()));
+    	
+   		List<Person> persons = repository.findAll();
 
-        repository.save(new Person(person.getPrenom(),person.getNom(),person.getEmail()));
-        
-        List<Person> persons = repository.findAll();
-
+   		m.addAttribute("pers" , person);
+		persons.add(person);
+   		
         m.addAttribute("persons", persons);
         return "person";
     }
