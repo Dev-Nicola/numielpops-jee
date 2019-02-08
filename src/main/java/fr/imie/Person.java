@@ -17,27 +17,28 @@ public class Person {
     private String email;
 
     public Person() {
+    	
     }
-
+   
     public Person(String firstname, String lastname, String email) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
     }
 
-    public String getPrenom() {
+    public String getFirstname() {
         return firstname;
     }
 
-    public void setPrenom(String firstname) {
+    public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
 
-    public String getNom() {
+    public String getLastname() {
         return lastname;
     }
 
-    public void setNom(String lastname) {
+    public void setLastname(String lastname) {
         this.lastname = lastname;
     }
     

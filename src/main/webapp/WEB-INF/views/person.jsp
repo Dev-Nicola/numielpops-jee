@@ -9,18 +9,19 @@
 
 	<h1>Formulaire</h1>
 	
-	<form method="POST" action="person">
-		<label for="firstname">Prénom : <input id="firstname" name="firstname" placeholder="Prénom"/></label>
-		<label for="lastname">Nom de famille : <input id="lastname" name="lastname" placeholder="Nom de famille"/></label>
-		<label for="email">Email : <input id="email" name="email" placeholder="Email"/></label>
-		<input name="submit" type="submit" />
-	</form>
-	
-	<table style="width: 50%; background-color: aliceblue; margin: auto; margin-top: 50px">
+	<table style="width: 80%; background-color: aliceblue; margin : auto; margin-top: 50px">
+		<tr style="text-align: center">
+			<form method="POST" action="person">
+				<td><label for="firstname">Prénom : <input id="firstname" name="firstname" placeholder="Prénom"/></label></td>
+				<td><label for="lastname">Nom de famille : <input id="lastname" name="lastname" placeholder="Nom de famille"/></label></td>
+				<td><label for="email">Email : <input id="email" name="email" placeholder="Email"/></label></td>
+				<td><input name="submit" type="submit" /></td>
+			</form>
+		</tr>
 		<c:forEach var="pers" items="${persons}">
           <tr style="text-align: center">
-            <td>${pers.prenom}</td>
-            <td>${pers.nom}</td>
+            <td>${pers.firstname}</td>
+            <td>${pers.lastname}</td>
             <td>${pers.email}</td>
           </tr>
          </c:forEach>
